@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(59 59 107 / 80%)
+  background-color: rgb(59 59 107 / 80%);
+  color: #fff;
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
   justify-content: left;
   background-color: #1b1b32;
   font-size: 22px;
+  padding: 30px;
 }
 .input-field{
   display: flex;
@@ -23,15 +25,43 @@ body {
 }
 .input-field input{
   height: 30px;
-  width: 80%;
+  width: 100%;
 
 }
 #dropdown{
   height: 30px;
-  width: 80%;
+  width: 100%;
 }
 
 #dropdown-2{
   height: 30px;
-  width: 80%;
+  width: 100%;
+}
+
+input,label {
+  display: block;
+}
+
+input:not([type='checkbox']) {
+  display: initial;
+}
+
+.textbox {
+  width: 100%;
+  height: 90px;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  background-color: #37af65;
+}
+
+.input-field label {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.checklist label {
+  display: inline;
 }

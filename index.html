@@ -30,15 +30,17 @@
     <script src="js/index.js"></script>
 
     <div class="form" id="survey-form">
+      <div class="input-field">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
 
-      <label id="name-label" for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter Your Name">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Your Email">
 
-      <label id="email-label" for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter Your Email">
+        <label id="age-label" for="age">Age (optional)</label>
+        <input type="number" id="number" placeholder="Age" min="18" max="45"> <br />
+      </div>
 
-      <label id="age-label" for="age">Age (optional)</label>
-      <input type="number" id="number" placeholder="Age" min="18" max="45">
       <label>Which option best descibes your current role?</label>
       <select id="dropdown">
         <option>Student</option>
@@ -47,10 +49,14 @@
         <option>Prefer not to say</option>
         <option>Other</option>
       </select>
-      <div>
+
+      <div class="recommend">
         <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label>Definitely</label>
         <input type="radio" id="definitely" name="recommendation" value="definitely">
+        <label>Maybe</label>
         <input type="radio" id="maybe" name="recommendation" value="maybe">
+        <label>Not Sure</label>
         <input type="radio" id="not-sure" name="recommendation" value="not-sure">
       </div>
 
@@ -61,14 +67,14 @@
         <option>Open Source</option>
       </select>
 
-      <div >
+      <div>
         <input type="checkbox" name="option1" id="option1" value="Front-end Projects">
         <label for="option1">Front-end Projects</label>
         <input type="checkbox" name="option2" id="option2" value="Back-end Projects">
         <label for="Back-end Projects">Back-end Projects</label>
         <input type="checkbox" name="option3" id="option3" value="Data Visualization">
         <label for="Back-end Projects">Back-end Projects</label>
-        <input type="checkbox" name="option4" id="option4"  value="Challenges">
+        <input type="checkbox" name="option4" id="option4" value="Challenges">
         <input type="checkbox" name="option5" id="option5" value="OpenSource Community">
         <input type="checkbox" name="option6" id="option6" value="Gitter help rooms">
         <input type="checkbox" name="option7" id="option7" value="Videos">

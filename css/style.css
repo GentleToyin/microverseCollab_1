@@ -12,6 +12,26 @@ body {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  background-color: #1b1b32;
+  font-size: 22px;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
+.input-field input{
+  height: 30px;
+  width: 80%;
+
+}
+#dropdown{
+  height: 30px;
+  width: 80%;
+}
+
+#dropdown-2{
+  height: 30px;
+  width: 80%;
 }

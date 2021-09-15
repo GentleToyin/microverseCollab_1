@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <!--
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!--
 
     Hello Camper!
 
@@ -21,26 +22,52 @@
     - The freeCodeCamp Team
 
     -->
-    <div class="container">
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">
-        Thank you for taking the time to help us improve the platform
-      </p>
-      <script src="js/index.js"></script>
+  <div class="container">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <script src="js/index.js"></script>
 
-      <div class="form" id="survey-form">
-        
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Enter Your Name" >
+    <div class="form" id="survey-form">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter Your Email">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter Your Name">
 
-        <label for="age">Age (optional)</label>
-        <input type="number" id="number" placeholder="Age" min="18" max="45">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter Your Email">
 
-
+      <label id="age-label" for="age">Age (optional)</label>
+      <input type="number" id="number" placeholder="Age" min="18" max="45">
+      <label>Which option best descibes your current role?</label>
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+      <div>
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <input type="radio" id="definitely" name="recommendation" value="definitely">
+        <input type="radio" id="maybe" name="recommendation" value="maybe">
+        <input type="radio" id="not-sure" name="recommendation" value="not-sure">
       </div>
+
+      <select id="dropdown-2">
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option>
+      </select>
+
+
+
+
+
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
